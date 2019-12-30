@@ -78,8 +78,10 @@
                 }
 
                 if ($scope.showNavButtons === true) {
-                    params.nextButton = '#nextButton-' + $scope.swiper_uuid;
-                    params.prevButton = '#prevButton-' + $scope.swiper_uuid;
+                    params.navigation = {
+                        nextEl: '#nextButton-' + $scope.swiper_uuid,
+                        prevEl: '#prevButton-' + $scope.swiper_uuid
+                    };
                 }
 
                 if ($scope.showScrollBar === true) {
